@@ -1,0 +1,48 @@
+.deftop-menu{
+  #horizontal-multilevel-menu li a.root-item{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #horizontal-multilevel-menu li a.root-item-selected{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
+    border-radius: 3px;
+  }
+  li{
+    &:first-child{
+      a{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+  }
+  /*background: none;
+  border: none;
+  width: auto !important;
+  ul{
+    @include clearfix;
+    li{
+      margin: 0px 15px 0px 0px;
+      background: linear-gradient(to bottom, #FFE154, #FFB639);
+      height: 35px;
+      width: 150px;
+      text-align: center;
+      border-radius: 3px;
+      a{
+        float: none;
+        display: block;
+        text-align: center;
+        @include link(#000000, #ffffff);
+        span{
+          font-size: 15px;
+          line-height: 33px;
+          font-weight: bold;
+        }
+        text-decoration: none;
+        border: none;
+      }
+    }
+  }*/
+}
