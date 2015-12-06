@@ -38,12 +38,12 @@ gulp.task('css', function () {
 
 // SFTP
 gulp.task('sftp', function () {
-    return gulp.src('css/all.css')
-      .pipe(sftp({
-        host: '78.46.106.201',
-        auth: 'key',
-        remotePath: '/home/onbike/www/bitrix/templates/onbike/css'
-      }));
+  return gulp.src('css/all.css')
+    .pipe(sftp({
+      host: 'wfs.by',
+      auth: 'key',
+      remotePath: '/home/evasby/www/on-bike/bitrix/templates/onbike/css'
+    }));
 });
 gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
