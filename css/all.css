@@ -43,3 +43,17 @@
 
 .brands-vertical li {
   text-align: center; }
+
+.location_auto input {
+  float: left; }
+
+.location_auto label {
+  clear: none !important;
+  padding-left: 20px; }
+
+.location_manual input {
+  float: left; }
+
+.location_manual label {
+  clear: none !important;
+  padding-left: 20px; }

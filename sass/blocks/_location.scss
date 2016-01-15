@@ -1,0 +1,22 @@
+.location{
+  &_auto{
+    input{
+      float: left;
+    }
+    label{
+      clear: none!important;
+      //overflow: hidden;
+      padding-left: 20px;
+    }
+  }
+  &_manual{
+    input{
+      float: left;
+    }
+    label{
+      clear: none!important;
+      //overflow: hidden;
+      padding-left: 20px;
+    }
+  }
+}
