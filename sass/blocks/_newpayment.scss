@@ -1,0 +1,26 @@
+.newpayment{
+	h4{
+		margin-bottom: 10px;
+	}
+	.bx_element{
+		position: relative;
+		margin-bottom: 20px;
+	}
+	input[type="radio"]{
+		position: absolute;
+		top: 20px;
+		left: 0px;
+	}
+	label{
+		
+	}
+	.bx_logotype{
+		padding-left: 25px;
+	}
+	.bx_description{
+		padding-left: 25px;
+		p{
+			margin-top: -5px;
+		}
+	}
+}

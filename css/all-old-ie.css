@@ -44,16 +44,44 @@
 .brands-vertical li {
   text-align: center; }
 
-.location_auto input {
-  float: left; }
+.location_label {
+  display: none !important; }
 
-.location_auto label {
-  clear: none !important;
-  padding-left: 20px; }
+.location_auto {
+  display: none; }
+  .location_auto input {
+    float: left; }
+  .location_auto label {
+    clear: none !important;
+    padding-left: 20px; }
 
-.location_manual input {
-  float: left; }
+.location_manual {
+  display: none; }
+  .location_manual input {
+    float: left; }
+  .location_manual label {
+    clear: none !important;
+    padding-left: 20px; }
 
-.location_manual label {
-  clear: none !important;
-  padding-left: 20px; }
+.location_input {
+  display: none; }
+
+.newpayment h4 {
+  margin-bottom: 10px; }
+
+.newpayment .bx_element {
+  position: relative;
+  margin-bottom: 20px; }
+
+.newpayment input[type="radio"] {
+  position: absolute;
+  top: 20px;
+  left: 0px; }
+
+.newpayment .bx_logotype {
+  padding-left: 25px; }
+
+.newpayment .bx_description {
+  padding-left: 25px; }
+  .newpayment .bx_description p {
+    margin-top: -5px; }
