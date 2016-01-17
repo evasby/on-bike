@@ -85,3 +85,42 @@
   padding-left: 25px; }
   .newpayment .bx_description p {
     margin-top: -5px; }
+
+.webpay-info {
+  color: #fff;
+  padding-top: 15px; }
+  .webpay-info img {
+    vertical-align: middle; }
+  .webpay-info h2 {
+    margin-bottom: 5px; }
+  .webpay-info h3 {
+    margin-top: 5px; }
+  .webpay-info ul {
+    margin-left: 15px;
+    list-style-type: disc; }
+  .webpay-info ol {
+    margin-left: 15px;
+    list-style-type: decimal; }
+  .webpay-info_item {
+    margin-bottom: 15px; }
+  .webpay-info a {
+    color: #bcbcbc;
+    text-decoration: underline; }
+    .webpay-info a:visited {
+      color: #bcbcbc; }
+    .webpay-info a:hover {
+      color: #bcbcbc; }
+    .webpay-info a:active {
+      color: #bcbcbc; }
+    .webpay-info a:focus {
+      color: #bcbcbc; }
+    .webpay-info a:hover {
+      text-decoration: none; }
+
+#ocb-form-click .ocb-form-field {
+  position: relative; }
+  #ocb-form-click .ocb-form-field:before {
+    content: "+375";
+    position: absolute;
+    top: 35px;
+    left: -35px; }

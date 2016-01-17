@@ -1,0 +1,31 @@
+.webpay-info{
+	color: #fff;
+	padding-top: 15px;
+	img{
+		vertical-align: middle;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+	h3{
+		margin-top: 5px;
+	}
+	ul{
+		margin-left: 15px;
+		list-style-type: disc;
+	}
+	ol{
+		margin-left: 15px;
+		list-style-type: decimal;
+	}
+	&_item{
+		margin-bottom: 15px;
+	}
+	a{
+		@include link(#bcbcbc, #bcbcbc);
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
