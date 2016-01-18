@@ -1,0 +1,16 @@
+.onorder{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  background-color: #FB823F;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+  .bx_catalog_item:hover &{
+    display: block;
+  }
+}

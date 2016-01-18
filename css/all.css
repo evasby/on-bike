@@ -92,7 +92,10 @@
   .webpay-info img {
     vertical-align: middle; }
   .webpay-info h2 {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    cursor: pointer; }
+    .webpay-info h2:hover {
+      color: #ccc; }
   .webpay-info h3 {
     margin-top: 5px; }
   .webpay-info ul {
@@ -116,6 +119,24 @@
       color: #bcbcbc; }
     .webpay-info a:hover {
       text-decoration: none; }
+  .webpay-info_spoiler {
+    display: none; }
+
+.onorder {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  background-color: #FB823F;
+  padding: 0 5px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none; }
+  .bx_catalog_item:hover .onorder {
+    display: block; }
 
 #ocb-form-click .ocb-form-field {
   position: relative; }

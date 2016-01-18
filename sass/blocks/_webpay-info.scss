@@ -6,6 +6,10 @@
 	}
 	h2{
 		margin-bottom: 5px;
+		cursor: pointer;
+		&:hover{
+			color: #ccc;
+		}
 	}
 	h3{
 		margin-top: 5px;
@@ -27,5 +31,8 @@
 		&:hover{
 			text-decoration: none;
 		}
+	}
+	&_spoiler{
+		display: none;
 	}
 }
