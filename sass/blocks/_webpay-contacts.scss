@@ -1,0 +1,11 @@
+.webpay-contacts{
+	@include clearfix;
+	margin-bottom: 15px;
+	&_item{
+		float: left;
+		width: 50%;
+		&:first-child{
+			//width: 60%;
+		}
+	}
+}
