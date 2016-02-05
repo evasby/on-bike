@@ -93,6 +93,7 @@
   .webpay-info img {
     vertical-align: middle; }
   .webpay-info h2 {
+    font-family: 'Courier New';
     margin-bottom: 5px;
     cursor: pointer; }
     .webpay-info h2:hover {
@@ -158,6 +159,19 @@
   display: none; }
   .bx_catalog_item:hover .onorder {
     display: block; }
+
+.ltCatPart .news {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cbcbcb;
+  width: 250px; }
+
+.news_image {
+  display: block;
+  width: 250px;
+  margin-bottom: 10px; }
+  .news_image img {
+    width: 100%;
+    height: auto; }
 
 #ocb-form-click .ocb-form-field {
   position: relative; }

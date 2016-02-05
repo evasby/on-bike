@@ -1,0 +1,20 @@
+.news{
+	.ltCatPart &{
+		padding-bottom: 15px;
+		border-bottom: 1px solid #cbcbcb;
+		width: 250px;
+	}
+	&_image{
+		display: block;
+		width: 250px;
+		margin-bottom: 10px;
+		//float: left;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_top{
+		//@include clearfix;
+	}
+}
