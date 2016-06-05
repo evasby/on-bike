@@ -10,6 +10,7 @@
   font-weight: bold;
   text-transform: uppercase;
   display: none;
+  z-index: 1000;
   .bx_catalog_item:hover &{
     display: block;
   }

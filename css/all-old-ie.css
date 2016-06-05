@@ -1,4 +1,7 @@
 @charset "UTF-8";
+a:focus {
+  outline: none; }
+
 .deftop-menu {
   /*background: none;
   border: none;
@@ -36,11 +39,6 @@
   .deftop-menu #horizontal-multilevel-menu, .deftop-menu #horizontal-multilevel-menu ul {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
-  .deftop-menu li:first-child a {
-    -webkit-border-top-left-radius: 3px;
-    border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px; }
 
 .brands-vertical li {
   text-align: center; }
@@ -95,11 +93,13 @@
   .webpay-info h2 {
     font-family: 'Courier New';
     margin-bottom: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 20px; }
     .webpay-info h2:hover {
       color: #ccc; }
   .webpay-info h3 {
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-size: 15px; }
   .webpay-info ul {
     margin-left: 15px;
     list-style-type: disc; }
@@ -156,7 +156,8 @@
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  display: none; }
+  display: none;
+  z-index: 1000; }
   .bx_catalog_item:hover .onorder {
     display: block; }
 
@@ -172,6 +173,10 @@
   .news_image img {
     width: 100%;
     height: auto; }
+
+.icon {
+  left: -2px;
+  z-index: 1000; }
 
 #ocb-form-click .ocb-form-field {
   position: relative; }

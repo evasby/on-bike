@@ -33,6 +33,7 @@ gulp.task('css', function () {
       cascade: false
     }))
     .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('D:/OpenServer/domains/bitrix-onbike/bitrix/templates/onbike'))
     .pipe(notify('CSS - Done!'));
 });
 
@@ -47,8 +48,9 @@ gulp.task('sftp', function () {
 });
 gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
-  gulp.watch('css/all.css', ['sftp']);
+  //gulp.watch('css/all.css', ['sftp']);
 });
 
 // default
-gulp.task('default', ['css', 'sftp', 'watch']);
+//gulp.task('default', ['css', 'sftp', 'watch']);
+gulp.task('default', ['css', 'watch']);
