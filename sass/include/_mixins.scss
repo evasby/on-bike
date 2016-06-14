@@ -3,6 +3,9 @@
     @content;
   }
 }
+@mixin m980 {
+  @media all and (max-width: 979px) { @content; }
+}
 @mixin respond($media) {
   @if not $old-ie {
     @if $media == mobile {

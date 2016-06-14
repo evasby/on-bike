@@ -1,0 +1,25 @@
+.bx_catalog_list_home .bx_catalog_item .bx_catalog_item_container{
+	@include m980{
+		padding: 0 15px 15px;
+		animation: 0.5s ease 0s normal none 1 running borderview;
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fdc431;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 990;
+	}
+}
+.bx_catalog_list_home .bx_catalog_item .bx_catalog_item_controls{
+	@include m980{
+		display: block;
+	}
+}
+.bx_catalog_list_home .bx_catalog_item .bx_catalog_item_articul{
+	@include m980{
+		display: none;
+	}
+}

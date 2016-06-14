@@ -1,3 +1,86 @@
 a:focus{
 	outline: none;
 }
+@include m980{
+	body{
+		min-width: auto;
+	}
+	.wrap{
+		width: auto;
+	}
+	.top{
+		.phone{
+			display: none;
+		}
+		.top_link{
+			display: none;
+		}
+		.separator{
+			display: none;
+		}
+		.basket{
+			float: none;
+			width: 250px;
+			margin: 0 auto;
+		}
+		.basket_list{
+			display: none;
+		}
+	}
+	.header_bg{
+		height: auto;
+		& > .wrap{
+			padding-top: 10px;
+		}
+		& > .wrap > .container{
+			display: none;
+		}
+		.logo{
+			float: none;
+			width: auto;
+			max-width: 460px;
+			margin: 0 auto 10px auto;
+			background-size: contain;
+		}
+		.search{
+			/*float: none;
+			height: auto;
+			.bx_search_container{
+				max-width: 510px;
+				margin: 17px auto 10px auto;
+			}
+			.bx_field{
+				@include clearfix;
+				*{
+					box-sizing: border-box;
+				}
+			}
+			.s_input{
+				width: 75%;
+			}
+			.s_button{
+				margin: 0;
+				width: 25%;
+				background-position: -223px -32px;
+			}*/
+			display: none;
+		}
+	}
+	.sidebar{
+		display: none;
+	}
+
+	.content{
+		float: none;
+		width: 100%;
+		.sidebar ~ &{
+			width: 100%;
+		}
+	}
+
+	footer{
+		.copy{
+			width: auto;
+		}
+	}
+}
