@@ -8,6 +8,9 @@ a:focus{
 	.wrap{
 		width: auto;
 	}
+	header{
+		margin-bottom: 10px;
+	}
 	.top{
 		.phone{
 			display: none;
@@ -73,14 +76,192 @@ a:focus{
 	.content{
 		float: none;
 		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		/**{
+			box-sizing: border-box;
+		}*/
 		.sidebar ~ &{
 			width: 100%;
 		}
+		.ltCatPart ~ &{
+			width: 100%;
+		}
+		/*& > img,
+		noindex img*/
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.tabs img{
+			width: auto;
+		}
+		.breadcrumbs{
+			margin-bottom: 10px;
+		}
+		.catList{
+			padding: 0 15px;
+			text-align: center;
+			.category{
+				display: inline-block;
+				width: 33.33%;
+				padding: 0 30px;
+				margin-bottom: 10px;
+				height: auto;
+				a{
+					font-size: 12px;
+				}
+				/*em{
+					font-size: 12px;
+					display: inline-block;
+					height: 20px;
+					text-decoration: underline;
+				}*/
+				em{
+					min-height: 28px;
+					line-height: 1.1;
+					border: none;
+				}
+				&:hover em{
+					border-bottom: 1px solid #b0b0b0;
+				}
+				.cat_img{
+					/*display: inline-block;
+					text-align: center;*/
+					height: 100px;
+				}
+			}
+		}
+		.sort{
+			float: none;
+			text-align: center;
+			margin-bottom: 10px;
+			p,a{
+				float: none;
+				display: inline-block;
+			}
+		}
+		.select_view{
+			float: none;
+			text-align: center;
+			p,a,span{
+				float: none!important;
+				display: inline-block;
+			}
+		}
+		.page_navi{
+			padding-top: 0;
+			margin-bottom: 15px;
+			text-align: center;
+			span,
+			a{
+				float: none;
+				display: inline-block;
+				margin-right: 2px;
+			}
+		}
 	}
-
+	.address-wrapper{
+		float: none;
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
 	footer{
 		.copy{
 			width: auto;
+			float: none;
+			padding: 0 15px;
+		}
+	}
+	.ch_title{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.to_top{
+		z-index: 1000;
+	}
+	.about{
+		margin-bottom: 0;
+		.about_text{
+			padding-top: 10px;
+			float: none;
+			width: auto;
+			h1{
+				margin: 0 0 10px 0;
+				text-align: center;
+				line-height: 1;
+			}
+			p{
+				text-align: center!important;
+			}
+			.show_text{
+				float: none;
+				display: block;
+				width: 130px;
+				margin: 0 auto;
+				@include link2(#fff, #000);
+			}
+		}
+		.news_box{
+			position: static;
+			margin-right: 0;
+			width: auto;
+			.nb_inner{
+				width: auto;
+				text-align: center;
+			}
+		}
+	}
+	.webpay-info{
+		padding: 0 15px;
+	}
+	.money{
+		float: none;
+		text-align: center;
+		img{
+			float: none;
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+	}
+	.social{
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+		img{
+			float: none;
+		}
+	}
+	.footer_contact{
+		float: none;
+		text-align: left;
+		padding-left: 15px;
+	}
+
+
+
+
+	.ltCatPart{
+		padding: 0 15px;
+		float: none;
+		width: 100%;
+		#kombox-filter{
+			max-width: none;
+			.kombox-filter-property-body{
+				display: none;
+			}
+			.modef{
+				left: auto!important;
+				right: 0!important;
+			}
+		}
+		.nb_inner{
+			display: none;
 		}
 	}
 }

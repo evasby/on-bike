@@ -1,0 +1,27 @@
+@include m980{
+	.product_large{
+		.pl_left{
+			float: none;
+			width: auto;
+			.wrapBorder{
+				width: 100%;
+				height: 250px;
+			}
+			.no-foto{
+				width: auto;
+				max-width: 300px;
+				margin: 0 auto;
+			}
+			.pl_about{
+				display: none;
+			}
+		}
+		.pl_right{
+			float: none;
+			margin: 0 auto;
+		}
+	}
+	.tabs_list li a{
+		font-size: 12px;
+	}
+}

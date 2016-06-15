@@ -79,6 +79,13 @@
     &:active{color:$normal;}; 
     &:focus{color:$normal;}; 
 }
+@mixin link2($normal, $hover){
+  color:$normal;
+    &:visited{color:$normal;};
+    &:active{color:$normal;}; 
+    &:focus{color:$normal;}; 
+    &:hover{color:$hover;};
+}
 //*********************************************************************************/
 @mixin clearfix {
   &:after {
