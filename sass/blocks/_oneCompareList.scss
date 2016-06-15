@@ -1,0 +1,43 @@
+.oneCompareList{
+	@include m980{
+		h2{
+			font-size: 14px!important;
+		}
+		.compare_text{
+			height: auto;
+			padding: 10px 0;
+			margin-bottom: 15px;
+			p{
+				float: none;
+				line-height: 1;
+				padding-left: 10px;
+			}
+			a{
+				display: none;
+			}
+		}
+		.delete_compare{
+			right: auto;
+			left: 9px;
+		}
+		.compare_settings{
+			display: none;
+		}
+		.compare_product_alt{
+			float: none;
+			width: 100%;
+		}
+		.compare_product_alt > ul > li{
+			width: 50%;
+			margin: 0;
+		}
+		.product_img{
+			width: 100%;
+			max-width: 218px;
+		}
+		.settings li{
+			width: 100%;
+			font-size: 12px;
+		}
+	}
+}

@@ -24,4 +24,51 @@
 	.tabs_list li a{
 		font-size: 12px;
 	}
+	.slider_item{
+		width: 100%;
+		min-height: 0;
+		text-align: center;
+		margin-bottom: 10px;
+		.slides_control{
+			width: 100%!important;
+		}
+		.slides_container{
+			height: auto;
+		}
+		.slides_container a{
+			width: 100%;
+			max-width: 597px;
+			margin: 0 auto;
+			display: none;
+			height: auto;
+		}
+		.slides_container a:first-child{
+			display: table;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.pagination{
+			//display: inline-block;
+			display: none;
+			text-align: center;
+			li{
+				float: none;
+				display: inline-block;
+				margin: 0 5px;
+				padding: 5px;
+				width: auto;
+				max-width: 50px;
+				a{
+					float: none;
+					margin: 0;
+				}
+			}
+			li.current{
+				background: #fff7e9 none repeat scroll 0 0;
+				border: 1px solid #ffb732;
+			}
+		}
+	}
 }
