@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     sftp = require('gulp-sftp'),
     plumberNotifier = require('gulp-plumber-notifier'),
     plumber = require('gulp-plumber'),
-    wait = require('gulp-wait');
+    wait = require('gulp-wait'),
+    ftp = require( 'vinyl-ftp' );
 
 
 
@@ -19,7 +20,13 @@ function errorAlert(error){
   this.emit("end"); //End function
 };
 
-
+//ftp
+var conn = ftp.create( {
+  host:     '185.47.153.28',
+  user:     '',
+  password: '',
+  parallel: 10
+} );
 // css
 gulp.task('css', function () {
   return gulp.src('./sass/all*.scss')
@@ -34,6 +41,8 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('D:/OpenServer/domains/bitrix-onbike/bitrix/templates/onbike'))
+    .pipe( conn.dest( '/www/new.on-bike.by/bitrix/templates/onbike' ) )
+    .pipe( conn.dest( '/www/temp.on-bike.by/bitrix/templates/onbike' ) )
     .pipe(notify('CSS - Done!'));
 });
 

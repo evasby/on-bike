@@ -31,8 +31,10 @@
   }
   @include m980{
     #horizontal-multilevel-menu{
+      padding-bottom: 10px;
       li{
         float: none;
+        display: block;
       }
     } 
   }
