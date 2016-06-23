@@ -90,7 +90,8 @@ a:focus {
   .wrap {
     width: auto; }
   header {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-top: 102px; }
   .top .phone {
     display: none; }
   .top .top_link {
@@ -305,7 +306,11 @@ a:focus {
 
 @media all and (max-width: 979px) {
   .deftop-menu {
-    background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0; } }
+    background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 1600; } }
 
 @media all and (max-width: 979px) {
   .deftop-menu #horizontal-multilevel-menu {

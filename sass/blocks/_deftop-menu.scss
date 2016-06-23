@@ -1,6 +1,10 @@
 .deftop-menu{
   @include m980{
     background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 1600;
   }
   #horizontal-multilevel-menu{
     @include m980{
