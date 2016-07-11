@@ -23,7 +23,7 @@ function errorAlert(error){
 //ftp
 var conn = ftp.create( {
   host:     '185.47.153.28',
-  user:     '',
+  user:     'wfsadmin',
   password: '',
   parallel: 10
 } );

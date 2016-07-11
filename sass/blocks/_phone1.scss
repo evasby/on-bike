@@ -1,0 +1,17 @@
+.phone1{
+	float: left;
+	padding-top: 2px;
+	span{
+		display: block;
+		padding: 0 15px;
+		line-height: 1.2;
+		color: #bc262c;
+		font-weight: bold;
+	}
+	span.phone1_black{
+		color: #000;
+	}
+	@include m980{
+		display: none;
+	}
+}

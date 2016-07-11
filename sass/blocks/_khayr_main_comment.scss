@@ -1,0 +1,12 @@
+.khayr_main_comment{
+	.form{
+		background: none;
+		padding: 0;
+		form{
+			padding: 0 0 30px 0;
+		}
+	}
+	form input, form select, form textarea, textarea{
+		border: 1px solid #d1d1d1;
+	}
+}
