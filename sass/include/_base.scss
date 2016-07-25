@@ -285,6 +285,9 @@ a:focus{
 		z-index: 1000;
 		left: auto;
 		right: 30px;
+		@include m768{
+			display: none;
+		}
 	}
 	.about{
 		margin-bottom: 0;
@@ -364,5 +367,18 @@ a:focus{
 		.nb_inner{
 			display: none;
 		}
+	}
+}
+@include m768{
+	.content_item{
+		h2.ch_title{
+			display: none;
+			& + div{
+				display: none;
+			}
+		}
+		/*.bx_catalog_list_home{
+			
+		}*/
 	}
 }

@@ -3,10 +3,13 @@
 	padding-top: 2px;
 	span{
 		display: block;
-		padding: 0 15px;
+		padding: 0 25px;
 		line-height: 1.2;
-		color: #bc262c;
+		//color: #bc262c;
+		color: #000;
 		font-weight: bold;
+		font-family: 'Comic Sans MS', cursive;
+		font-size: 19px;
 	}
 	@include m980{
 		display: none;

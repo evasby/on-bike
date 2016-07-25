@@ -1,0 +1,17 @@
+.tabs{
+	@include m768{
+		&_list{
+			display: block;
+			background-size: cover;
+			li{
+				display: inline-block;
+				
+				a{
+					display: inline-block;
+					padding: 0 10px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}
