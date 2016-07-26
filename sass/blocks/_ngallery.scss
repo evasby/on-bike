@@ -1,0 +1,95 @@
+.ngallery{
+	margin-top: 15px;
+	.bx_catalog_line .bx_catalog_line_img{
+		float: none;
+		height: auto;
+		width: 100%;
+		margin: 0;
+		@include link(#333, #333);
+		&:hover{
+			box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		}
+		h2{
+			font-size: 16px;
+			text-align: center;
+			font-weight: 600;
+			height: 40px;
+			margin: 0;
+			display: table;
+			width: 100%;
+			span{
+				display: table-cell;
+				vertical-align: middle;
+				width: 100%;
+			}
+		}
+	}
+	&_wrap{
+		display: block;
+		height: 183px;
+		overflow: hidden;
+		img{
+			display: block;
+		}
+	}
+	&_catlist{
+		@include clearfix;
+		margin: 0 -0.5% 0 -0.5%;
+		li{
+			float: left;
+			width: 24%;
+			margin: 0 0.5% 0 0.5%;
+			@include m980{
+				width: 100%;
+				max-width: 245px;
+				float: none;
+				margin: 0 auto;
+			}
+		}
+	}
+	&_prodlist{
+		margin: 0 -1%;	
+	}
+	&_item{
+		float: left;
+		width: 23%;
+		margin: 0 1% 15px 1%;
+		border: 1px solid #ccc;
+		transition: all 0.3s ease 0s;
+		@include m980{
+			display: block;
+			width: 100%;
+			max-width: 176px;
+			float: none;
+			margin: 0 auto 15px auto;
+		}
+		&:hover{
+			box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_itemwrap{
+		display: block;
+		height: 150px;
+		overflow: hidden;
+	}
+	&_itemname{
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		font-weight: 600;
+		height: 30px;
+		margin: 0;
+		display: table;
+		width: 100%;
+		span{
+			display: table-cell;
+			vertical-align: middle;
+			width: 100%;
+		}
+	}
+}
