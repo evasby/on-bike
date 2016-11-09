@@ -1,0 +1,43 @@
+.newform{
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	max-width: 300px;
+	&,*{
+		box-sizing: border-box;
+	}
+	&_title{
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&_input{
+		margin-bottom: 5px;
+		input{
+			display: inline-block;
+			width: 100%;
+			line-height: 25px;
+			padding: 0 10px;
+		}
+	}
+	&_submit{
+		margin: 15px 10px 10px 0;
+		input{
+			display: inline-block;
+			background:url(images/link.png) repeat-x;
+			font-size:13px;
+			line-height:31px;
+			text-transform:uppercase;
+			font-weight:700;
+			color:#000;
+			text-shadow:1px 1px 0 rgba(255, 255, 255, 0.64);
+			text-align:center;
+			height:31px;
+			padding:0 10px;
+			border: none;
+			&:hover{
+				background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAzCAIAAADZxfV4AAAAM0lEQVQYV2P6/9qDieH/fyBmgND/GFD5IPofNnk0tf+QaWxyWMz+hySGzSxs9uBy438GABrqTz1kPxqwAAAAAElFTkSuQmCC);
+			}
+		}
+	}
+}

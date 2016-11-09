@@ -1,4 +1,35 @@
 .deftop-menu{
+  &_list2{
+    display: none;
+    width: 170px!important;
+  }
+  &_item2{
+
+  }
+  &_link2{
+    padding: 7px 0 0 10px!important;
+  }
+  #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
+    background: #fff;
+    a{
+      @include link(#BC262C, #fff);
+      padding: 7px 31px;
+    }
+    a.root-item{
+      @include link(#BC262C, #fff);
+      padding: 7px 31px;
+      @include m980{
+        @include link(#fff, #fff);
+      }
+    }
+    a.root-item-selected{
+      @include link(#fff, #fff);
+      padding: 7px 31px;
+    }
+  }
+
+
+
   @include m980{
     background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
     position: fixed;

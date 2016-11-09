@@ -40,9 +40,9 @@ gulp.task('css', function () {
       cascade: false
     }))
     .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('D:/OpenServer/domains/bitrix-onbike/bitrix/templates/onbike'))
+    //.pipe(gulp.dest('D:/OpenServer/domains/bitrix-onbike/bitrix/templates/onbike'))
     //.pipe( conn.dest( '/www/new.on-bike.by/bitrix/templates/onbike' ) )
-    .pipe( conn.dest( '/www/on-bike.by/bitrix/templates/onbike' ) )
+    //.pipe( conn.dest( '/www/on-bike.by/bitrix/templates/onbike' ) )
     .pipe(notify('CSS - Done!'));
 });
 

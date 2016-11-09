@@ -18,6 +18,30 @@ a:focus{
 .header_bg{
 	background-size: 100% auto;
 }
+.bx_search_container{
+	margin: 36px 0px 30px;
+}
+.bx_search_container .bx_field{
+	position: relative;
+	.s_button{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+#kombox-filter .lvl2{
+	margin-bottom: 5px;
+}
+#kombox-filter .kombox-combo .lvl2 label, #kombox-filter .kombox-radio .lvl2 label{
+	max-width: 190px!important;
+	vertical-align: middle;
+	line-height: 14px;
+	margin-bottom: 0;
+}
+#kombox-filter .kombox-combo .lvl2 input, #kombox-filter .kombox-radio .lvl2 input{
+	vertical-align: middle;
+	line-height: 14px;
+}
 #basket_form{
 	.bx_ordercart.bx_blue .bx_ordercart_order_pay_center .checkout{
 		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAzCAIAAADZxfV4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDk0Mjc5Zi0wYmZhLTRmNjItOGFiZS00Y2UzMDE1OTY3MjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUU5MUM2QjU4NzUzMTFFM0EyRTZEMzYyRjNFMUFCNUYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUU5MUM2QjQ4NzUzMTFFM0EyRTZEMzYyRjNFMUFCNUYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTMxZjJjNGUtY2VjZS00OGM0LWIxZTktY2RkOGU5YjI5OGMyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjFkOTQyNzlmLTBiZmEtNGY2Mi04YWJlLTRjZTMwMTU5NjcyMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjFAAcwAAAA4SURBVHjaYvh/y5GJ4f9/IGaAYiCbAUj/g9IwMaw0EvsfATUw8/7hMw9dD5BmQDIfwz0oegECDACzP0U2Qmw3sgAAAABJRU5ErkJggg==) repeat-x;font-size:15px;color:#000;text-align:center;line-height:51px;font-weight:bold;text-shadow:0 1px 0 rgba(255,255,255,.64);width:182px;height:51px;border:0;float:right;
@@ -286,7 +310,7 @@ a:focus{
 		left: auto;
 		right: 30px;
 		@include m768{
-			display: none;
+			display: none!important;
 		}
 	}
 	.about{
