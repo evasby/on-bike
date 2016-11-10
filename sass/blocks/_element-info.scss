@@ -1,0 +1,15 @@
+.element-info{
+	@include clearfix;
+	margin-bottom: 20px;
+	&_item{
+		float: left;
+		width: 33.33%;
+		text-align: center;
+		color: #4CBCDD;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	&_black{
+		color: #000;
+	}
+}

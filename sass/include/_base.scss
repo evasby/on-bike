@@ -6,6 +6,7 @@ a:focus{
 	//padding: 12px!important;
 	//height: 24px!important;
 }
+
 .one-click-modal{
 	width: 500px;
 }
@@ -41,6 +42,9 @@ a:focus{
 #kombox-filter .kombox-combo .lvl2 input, #kombox-filter .kombox-radio .lvl2 input{
 	vertical-align: middle;
 	line-height: 14px;
+}
+#kombox-filter .kombox-num .kombox-input{
+	width: 4em;
 }
 #basket_form{
 	.bx_ordercart.bx_blue .bx_ordercart_order_pay_center .checkout{

@@ -13,18 +13,18 @@
     background: #fff;
     a{
       @include link(#BC262C, #fff);
-      padding: 7px 31px;
+      padding: 7px 23px;
     }
     a.root-item{
       @include link(#BC262C, #fff);
-      padding: 7px 31px;
+      padding: 7px 23px;
       @include m980{
         @include link(#fff, #fff);
       }
     }
     a.root-item-selected{
       @include link(#fff, #fff);
-      padding: 7px 31px;
+      padding: 7px 23px;
     }
   }
 
@@ -47,11 +47,11 @@
     }
   }
   #horizontal-multilevel-menu li a.root-item{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
   #horizontal-multilevel-menu li a.root-item-selected{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
   #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
