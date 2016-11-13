@@ -1,30 +1,105 @@
 .deftop-menu{
-  &_list2{
-    display: none;
-    width: 170px!important;
+  @include m980{
+    //background-color: #bc262c;
   }
-  &_item2{
-
-  }
-  &_link2{
-    padding: 7px 0 0 10px!important;
-  }
-  #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
+  #horizontal-multilevel-menu{
     background: #fff;
-    a{
-      @include link(#BC262C, #fff);
-      padding: 7px 23px;
+    display: table;
+    @include old-ie{
+      *display : inline;
+      *text-justify: newspaper;
+      *zoom:1;
     }
-    a.root-item{
-      @include link(#BC262C, #fff);
-      padding: 7px 23px;
-      @include m980{
-        @include link(#fff, #fff);
+    /*text-align: justify;
+    line-height: 0;
+    font-size: 1px;
+    @include old-ie{
+      *text-justify: newspaper;
+      *zoom:1;
+    }
+    text-align-last: justify;
+    &:after{
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+    }*/
+    @include m980{
+      background-color: transparent;
+      /*text-align: left;
+      text-align-last: start;*/
+      &:after{
+        display: none;
+        content: '';
+      }
+      padding-bottom: 10px;
+      display: none;
+      background: none;
+      .deftop-menu_toggle__on &{
+        display: block;
       }
     }
-    a.root-item-selected{
-      @include link(#fff, #fff);
-      padding: 7px 23px;
+    &>li{
+      float: none;
+      display: table-cell;
+      /*display: inline-block;
+      text-align: left;
+      line-height: normal;
+      font-size: 14px;
+      vertical-align: top;*/
+      &:hover{
+        &>a{
+          @include link(#fff, #fff);
+        }
+      }
+      @include old-ie{
+        *display : inline;
+        *zoom : 1;
+      }
+      @include m980{
+        display: block;
+      }
+      ul{
+        width: 290px;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s linear;
+        a{
+          padding: 7px 23px;
+          line-height: 1.2;
+        }
+        ul{
+          display: block;
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.2s linear;
+          margin: -28px 0 0 100%;
+          @include m980{
+            display: none;
+          }
+        }
+        li:hover{
+          ul{
+            visibility: visible;
+            opacity: 1;
+            @include m980{
+              display: none;
+            }
+          }
+        }
+      }
+      &:hover{
+        &>ul{
+          visibility: visible;
+          opacity: 1;
+          @include m980{
+            display: none;
+          }
+        }
+      }
     }
   }
 
@@ -37,15 +112,40 @@
     width: 100%;
     z-index: 1600;
   }
-  #horizontal-multilevel-menu{
-    @include m980{
-      display: none;
-      background: none;
-      .deftop-menu_toggle__on &{
-        display: block;
+  &_list2{
+    display: none;
+    width: 170px!important;
+  }
+  &_item2{
+
+  }
+  &_link2{
+    padding: 7px 0 0 10px!important;
+  }
+
+  #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
+    
+    a{
+      @include link(#BC262C, #fff);
+      padding: 8px 23px;
+    }
+    a.root-item{
+      @include link(#BC262C, #fff);
+      padding: 8px 23px;
+      @include m980{
+        @include link(#fff, #fff);
       }
     }
+    a.root-item-selected{
+      @include link(#fff, #fff);
+      padding: 8px 23px;
+    }
   }
+
+
+
+  
+
   #horizontal-multilevel-menu li a.root-item{
     font-size: 14px;
     font-weight: bold;
@@ -57,22 +157,7 @@
   #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
     border-radius: 3px;
   }
-  li{
-    &:first-child{
-      a{
-
-      }
-    }
-  }
-  @include m980{
-    #horizontal-multilevel-menu{
-      padding-bottom: 10px;
-      li{
-        float: none;
-        display: block;
-      }
-    } 
-  }
+  
   &_toggle{
     box-sizing: border-box;
     height: 53px;

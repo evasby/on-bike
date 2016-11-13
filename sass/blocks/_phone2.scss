@@ -1,6 +1,7 @@
 .phone2{
 	float: left;
-	padding: 2px 20px 0;
+	padding: 2px 13px 0;
+	min-width: 267px;
 	@include clearfix;
 	
 	&_hide{
@@ -29,6 +30,10 @@
 		text-decoration: underline;
 		position: relative;
 		top: -3px;
+		color: #4A7AB3;
+		&:hover{
+			color: lighten(#4A7AB3, 10%);
+		}
 	}
 	@include m980{
 		display: none;
