@@ -67,6 +67,9 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.2s linear;
+        li{
+          font-size: 12px;
+        }
         a{
           padding: 7px 23px;
           line-height: 1.2;

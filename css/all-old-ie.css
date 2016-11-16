@@ -436,6 +436,8 @@ a:focus {
       opacity: 0;
       -webkit-transition: visibility 0s, opacity 0.2s linear;
       transition: visibility 0s, opacity 0.2s linear; }
+      .deftop-menu #horizontal-multilevel-menu > li ul li {
+        font-size: 12px; }
       .deftop-menu #horizontal-multilevel-menu > li ul a {
         padding: 7px 23px;
         line-height: 1.2; }
