@@ -1,5 +1,13 @@
 .page-404{
-	padding: 20px 0 0;
-	font-size: 50px;
-	color: #FFB83A;
+	padding: 20px 0;
+	
+	&_title{
+		font-size: 50px;
+		color: #FFB83A;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+	&_text{
+		font-size: 18px;
+	}
 }

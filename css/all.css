@@ -1341,9 +1341,14 @@ a:focus {
     color: #000; }
 
 .page-404 {
-  padding: 20px 0 0;
-  font-size: 50px;
-  color: #FFB83A; }
+  padding: 20px 0; }
+  .page-404_title {
+    font-size: 50px;
+    color: #FFB83A;
+    line-height: 50px;
+    margin-bottom: 15px; }
+  .page-404_text {
+    font-size: 18px; }
 
 #ocb-form-click .ocb-form-field {
   position: relative; }
