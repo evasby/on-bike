@@ -8,6 +8,44 @@
 		color: #4CBCDD;
 		font-weight: bold;
 		font-size: 14px;
+		position: relative;
+		font-family: helios;
+		font-size: 17px;
+		line-height: 17px;
+		text-transform: uppercase;
+		color: #387c91;
+		//border-bottom: 1px solid #387c91;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -14px;
+			width: 56px;
+			height: 43px;
+		}
+		&__1{
+			&:before{
+				background: transparent url('images/element-info-1.png') left top no-repeat;
+				left: -5px;
+			}
+		}
+		&__2{
+			&:before{
+				background: transparent url('images/element-info-2.png') left top no-repeat;
+				left: 20px;
+			}
+		}
+		&__3{
+			&:before{
+				background: transparent url('images/element-info-3.png') left top no-repeat;
+				left: -17px;
+			}
+		}
+		span{
+			display: inline-block;
+			padding-bottom: 2px;
+			border-bottom: 1px solid #387c91;
+		}
 	}
 	&_black{
 		color: #000;

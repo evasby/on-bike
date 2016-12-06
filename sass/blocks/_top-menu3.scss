@@ -1,0 +1,32 @@
+.top-menu3{
+	//margin-top: 20px;
+	@include clearfix;
+	@include m980{
+		display: none;
+	}
+	&_list{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		
+		&:hover,
+		&__selected{
+			background-color: #fff;
+		}
+		a{
+			@include link(#fff, #387c91);
+			font-size: 16px;
+			line-height: 41px;
+			font-weight: bold;
+			//font-family: Arial, Tahoma;
+			font-family: heliosbold;
+			display: block;
+			padding: 0 27px;
+			font-weight: bold;
+		}
+		a:focus:hover{
+			color: #387c91;
+		}
+	}
+}
