@@ -1,6 +1,6 @@
 .element-info{
 	@include clearfix;
-	margin-bottom: 20px;
+	margin: -15px 0 30px;
 	&_item{
 		float: left;
 		width: 33.33%;
@@ -14,7 +14,14 @@
 		line-height: 17px;
 		text-transform: uppercase;
 		color: #387c91;
-		//border-bottom: 1px solid #387c91;
+		@include m980{
+			font-size: 12px;
+			float: none;
+			display: block;
+			width: 300px;
+			margin: 0 auto 25px auto;
+			text-align: left;
+		}
 		&:before{
 			content: '';
 			position: absolute;
@@ -24,27 +31,51 @@
 			height: 43px;
 		}
 		&__1{
+			padding-left: 40px;
+			@include m980{
+				padding-left: 60px;
+			}
 			&:before{
 				background: transparent url('images/element-info-1.png') left top no-repeat;
-				left: -5px;
+				left: 15px;
+				@include m980{
+					left: 0;
+				}
 			}
 		}
 		&__2{
+			padding-left: 20px;
+			@include m980{
+				padding-left: 60px;
+			}
 			&:before{
 				background: transparent url('images/element-info-2.png') left top no-repeat;
-				left: 20px;
+				left: 30px;
+				@include m980{
+					left: 0;
+				}
 			}
 		}
 		&__3{
+			padding-left: 20px;
+			@include m980{
+				padding-left: 60px;
+			}
 			&:before{
 				background: transparent url('images/element-info-3.png') left top no-repeat;
-				left: -17px;
+				left: -7px;
+				@include m980{
+					left: 0;
+				}
 			}
 		}
 		span{
 			display: inline-block;
 			padding-bottom: 2px;
 			border-bottom: 1px solid #387c91;
+			@include m980{
+				padding-bottom: 0;
+			}
 		}
 	}
 	&_black{

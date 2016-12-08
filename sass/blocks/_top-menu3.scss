@@ -25,6 +25,9 @@
 			padding: 0 27px;
 			font-weight: bold;
 		}
+		a.selected{
+			@include link(#387c91, #387c91);
+		}
 		a:focus:hover{
 			color: #387c91;
 		}

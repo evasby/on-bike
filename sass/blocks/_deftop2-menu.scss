@@ -68,10 +68,10 @@
         opacity: 0;
         transition: visibility 0s, opacity 0.2s linear;
         li{
-          font-size: 12px;
+          font-size: 14px;
         }
         a{
-          padding: 7px 23px;
+          padding: 7px 25px;
           line-height: 1.2;
         }
         ul{
@@ -111,7 +111,7 @@
   @include m980{
     background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
     position: fixed;
-    top: 50px;
+    top: 35px;
     width: 100%;
     z-index: 1600;
   }
