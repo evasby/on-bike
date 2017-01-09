@@ -449,15 +449,24 @@ pre {
   font-family: "helios";
   src: url("fonts/HeliosCondRegular/HeliosCondRegular.eot");
   src: url("fonts/HeliosCondRegular/HeliosCondRegular.eot?#iefix") format("embedded-opentype"), url("fonts/HeliosCondRegular/HeliosCondRegular.woff") format("woff"), url("fonts/HeliosCondRegular/HeliosCondRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  /*font-style: normal;
+    font-weight: normal;*/ }
 
+/*@font-face {
+    font-family: "helios";
+    src: url("fonts/HeliosCondRegular.eot");
+    src: url("fonts/HeliosCondRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/HeliosCondRegular.woff") format("woff"),
+    url("fonts/HeliosCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/
 @font-face {
   font-family: "heliosbold";
   src: url("fonts/HeliosCondBold/HeliosCondBold.eot");
   src: url("fonts/HeliosCondBold/HeliosCondBold.eot?#iefix") format("embedded-opentype"), url("fonts/HeliosCondBold/HeliosCondBold.woff") format("woff"), url("fonts/HeliosCondBold/HeliosCondBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  /*font-style: normal;
+    font-weight: normal;*/ }
 
 /*@font-face {
     font-family: 'heliosbold';

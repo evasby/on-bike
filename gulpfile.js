@@ -40,7 +40,7 @@ gulp.task('css', function () {
       cascade: false
     }))
     .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('c:/OpenServer/domains/on-bike2/bitrix/templates/onbike'))
+    //.pipe(gulp.dest('c:/OpenServer/domains/on-bike2/bitrix/templates/onbike'))
     //.pipe( conn.dest( '/www/new.on-bike.by/bitrix/templates/onbike' ) )
     //.pipe( conn.dest( '/www/on-bike.by/bitrix/templates/onbike' ) )
     .pipe(notify('CSS - Done!'));
