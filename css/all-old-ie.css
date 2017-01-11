@@ -2361,6 +2361,130 @@ pre {
     .newslider .next:hover:hover {
       opacity: 1; }
 
+.reviews-block {
+  margin: -422px 0 0;
+  padding: 30px 0 20px;
+  position: relative;
+  z-index: 10; }
+  @media all and (max-width: 979px) {
+    .reviews-block {
+      display: none; } }
+  .reviews-block_wrap {
+    margin: 0 auto;
+    width: 980px;
+    position: relative; }
+  .reviews-block_h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 20px; }
+  .reviews-block_list {
+    display: inline-block;
+    /* Прячем стили от IE для mac \*/
+    *zoom: 1;
+    display: block; }
+    .reviews-block_list:after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      visibility: hidden; }
+    * html .reviews-block_list {
+      height: 1%; }
+  .reviews-block_item {
+    float: left;
+    width: 22.95%; }
+  .reviews-block_text {
+    color: #5e5e5e;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 10px; }
+  .reviews-block_date {
+    color: #9f9f9f;
+    display: block;
+    font-size: 12px;
+    line-height: 14px; }
+  .reviews-block .bx-next {
+    display: block;
+    width: 19px;
+    height: 32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(images/sprite.png) no-repeat -325px -142px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .reviews-block .bx-next:hover {
+      background-position: -296px -150px; }
+  .reviews-block .bx-prev {
+    display: block;
+    width: 19px;
+    height: 32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(images/sprite.png) no-repeat -325px -108px;
+    position: absolute;
+    right: 79px;
+    top: 0; }
+    .reviews-block .bx-prev:hover {
+      background-position: -275px -150px; }
+
+.rating {
+  display: inline-block;
+  /* Прячем стили от IE для mac \*/
+  *zoom: 1;
+  display: block;
+  color: #5e5e5e;
+  margin: 0 0 10px; }
+  .rating:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden; }
+  * html .rating {
+    height: 1%; }
+  .rating_label {
+    float: left;
+    padding-top: 3px; }
+  .rating_list {
+    float: left;
+    display: inline-block;
+    /* Прячем стили от IE для mac \*/
+    *zoom: 1;
+    display: block; }
+    .rating_list:after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      visibility: hidden; }
+    * html .rating_list {
+      height: 1%; }
+  .rating_item {
+    float: left;
+    margin: 0 5px;
+    width: 21px;
+    height: 21px;
+    background: transparent url("images/raiting.png") left top no-repeat;
+    cursor: pointer; }
+    .rating_item__active {
+      background-position: 0 -46px; }
+
+.average {
+  text-align: center;
+  padding-top: 15px; }
+
+.tech-descr {
+  padding: 15px 0 0; }
+
 #ocb-form-click .ocb-form-field {
   position: relative; }
   #ocb-form-click .ocb-form-field:before {

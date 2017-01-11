@@ -1,0 +1,24 @@
+.rating{
+	@include clearfix;
+	color: #5e5e5e;
+	margin: 0 0 10px;
+	&_label{
+		float: left;
+		padding-top: 3px;
+	}
+	&_list{
+		float: left;
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		margin: 0 5px;
+		width: 21px;
+		height: 21px;
+		background: transparent url('images/raiting.png') left top no-repeat;
+		cursor: pointer;
+		&__active{
+			background-position: 0 -46px;
+		}
+	}
+}

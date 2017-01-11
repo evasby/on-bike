@@ -1,0 +1,70 @@
+.reviews-block{
+	margin: -422px 0 0;
+	padding: 30px 0 20px;
+	position: relative;
+	z-index: 10;
+	@include m980{
+		display: none;
+	}
+	&_wrap{
+		margin: 0 auto;
+  	width: 980px;
+  	position: relative;
+	}
+	&_h2{
+		//text-align: center;
+		font-size: 28px;
+		font-weight: bold;
+		margin: 0 0 20px;
+	}
+	&_list{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 22.95%;
+		//margin: 0 1.02%;
+	}
+	&_text{
+		color: #5e5e5e;
+		font-size: 14px;
+		line-height: 15px;
+		margin-bottom: 10px;
+	}
+	&_date{
+		color: #9f9f9f;
+		display: block;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.bx-next{
+		display: block;
+		width: 19px;
+		height: 32px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url(images/sprite.png) no-repeat -325px -142px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		&:hover{
+			background-position: -296px -150px;
+		}
+	}
+	.bx-prev{
+		display: block;
+		width: 19px;
+		height: 32px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url(images/sprite.png) no-repeat -325px -108px;
+		position: absolute;
+		right: 79px;
+		top: 0;
+		&:hover{
+			background-position: -275px -150px;
+		}
+	}
+}
