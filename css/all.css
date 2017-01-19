@@ -2430,6 +2430,11 @@ pre {
 .tech-descr {
   padding: 15px 0 0; }
 
+.form-rasprod {
+  width: 248px; }
+  .form-rasprod .newform_title {
+    font-size: 15px; }
+
 #ocb-form-click .ocb-form-field {
   position: relative; }
   #ocb-form-click .ocb-form-field:before {
