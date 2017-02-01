@@ -9,6 +9,9 @@
 @mixin m768 {
   @media all and (max-width: 768px) { @content; }
 }
+@mixin m500 {
+  @media all and (max-width: 500px) { @content; }
+}
 @mixin respond($media) {
   @if not $old-ie {
     @if $media == mobile {

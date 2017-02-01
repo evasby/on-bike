@@ -109,11 +109,13 @@
 
 
   @include m980{
-    background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
+    //background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
+    background: #377c91;
     position: fixed;
-    top: 35px;
+    top: 30px;
     width: 100%;
     z-index: 1600;
+    min-width: 320px;
   }
   &_list2{
     display: none;
@@ -132,14 +134,15 @@
     text-transform: uppercase;
     @include link(#101010, #101010);
     @include m980{
-      @include link(#fff, #fff);
+      @include link(#dfe6e9, #dfe6e9);
     }
   }
   #horizontal-multilevel-menu > li:last-child > a{
     @include link(#e62b24, #e62b24);
     padding: 11px 23px;
     @include m980{
-      @include link(#fff, #fff);
+      padding: 9px 23px;
+      @include link(#dfe6e9, #dfe6e9);
     }
   }
   #horizontal-multilevel-menu > li > a.root-item,
@@ -150,22 +153,33 @@
     @include link(#101010, #101010);
     padding: 11px 23px;
     @include m980{
-      @include link(#fff, #fff);
+      padding: 9px 23px;
+      @include link(#dfe6e9, #dfe6e9);
     }
   }
   #horizontal-multilevel-menu > li:last-child > a.root-item{
     @include link(#e62b24, #e62b24);
     @include m980{
-      @include link(#fff, #fff);
+      @include link(#dfe6e9, #dfe6e9);
     }
   }
 
   #horizontal-multilevel-menu > li:hover > a.root-item{
     background-color: #fedd00;
+    @include m980{
+      font-weight: bold;
+      @include link(#377c91, #377c91);
+      background-color: #fdc700;
+    }
   }
   #horizontal-multilevel-menu > li > a.root-item-selected{
     background-color: #fedd00;
     @include link(#101010, #101010);
+    @include m980{
+      font-weight: bold;
+      @include link(#377c91, #377c91);
+      background-color: #fdc700;
+    }
   }
 
   #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{ 
@@ -193,6 +207,9 @@
   #horizontal-multilevel-menu li a.root-item{
     font-size: 14px;
     font-weight: bold;
+    @include m980{
+      font-weight: normal;
+    }
   }
   #horizontal-multilevel-menu li a.root-item-selected{
     font-size: 14px;
@@ -204,8 +221,8 @@
   
   &_toggle{
     box-sizing: border-box;
-    height: 53px;
-    padding: 16px 0 0 15px;
+    height: 45px;
+    padding: 14px 0 0 15px;
     //background-color: #0066cb;
     position: relative;
     cursor: pointer;
@@ -215,20 +232,22 @@
     }   
   }
   &_text{
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     color: #fff;
     font-weight: bold;
+    text-transform: uppercase;
   }
   &_switch{
     position: absolute;
     display: block;
     width: 30px;
-    height: 3px;
+    height: 4px;
     right: 15px;
-    top: 25px;
+    top: 21px;
     background-color: #fff; 
-    .deftop-menu_toggle__on &{
+    border-radius: 2px;
+    .deftop2-menu_toggle__on &{
       background-color: transparent;
     }
   }
@@ -238,10 +257,10 @@
     left: 0;
     top: -10px;
     background-color: #fff;
-    height: 3px;
+    height: 4px;
     width: 100%;
-    .deftop-menu_toggle__on &{
-      transform: rotate(45deg) translate(7px, 7px);
+    .deftop2-menu_toggle__on &{
+      transform: translate(0, 10px) rotate(45deg);
     }
   }
   &_switch:after{
@@ -250,10 +269,10 @@
     left: 0;
     top: 10px;
     background-color: #fff;
-    height: 3px;
+    height: 4px;
     width: 100%;
-    .deftop-menu_toggle__on &{
-      transform: rotate(-45deg) translate(7px, -7px);
+    .deftop2-menu_toggle__on &{
+      transform: translate(0, -10px) rotate(-45deg) ;
     }
   }
   

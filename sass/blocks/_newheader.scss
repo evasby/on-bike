@@ -6,9 +6,13 @@
 	background: transparent url('images/newheader-bac.jpg') left top no-repeat;
 	background-size: 100% auto;
 	@include m980{
-		background-position: 50% top;
-		background-size: cover;
-		padding: 95px 0 15px;
+		background: transparent url('images/newheader-bac-mobile.jpg') 50% -75px no-repeat;
+		background-size: 100% auto;
+		padding: 85px 0 15px;
+		border-bottom: 4px solid #fdc700;
+	}
+	@include m500{
+		background-position: 50% 20px;
 	}
 	&, & *{
 		box-sizing: border-box;
@@ -42,12 +46,13 @@
 		display: block;
 		max-width: 317px;
 		margin: 25px 0 16px 20px;
+		img{
+			width: 100%;
+			height: auto;
+		}
 		@include m980{
 			margin: 0;
-			img{
-				width: 100%;
-				height: auto;
-			}
+			max-width: none;		
 		}
 	}
 	&_topclear{
@@ -58,11 +63,13 @@
 		height: 37px;
 		position: relative;
 		@include m980{
+			padding: 7px 0;
 			position: fixed;
 			z-index: 1600;
 			top: 0;
 			width: 100%;
 			background-color: #fff;
+			min-width: 320px;
 		}
 		&:before{
 			content: '';
@@ -101,6 +108,7 @@
 		padding: 10px 18px 0;
 		@include m980{
 			text-align: center;
+			display: none;
 		}
 	}
 	&_compare{
@@ -246,8 +254,12 @@
 			
 			font-size: 16px;
 			line-height: 20px;
+			@include m980{
+				font-size: 15px;
+				line-height: 17px;
+			}
 			.basket_list_open{
-				@include link(#fbad17, lighten(#fbad17, 30%));
+				@include link(#fdc700, lighten(#fdc700, 30%));
 			}
 		}
 	}

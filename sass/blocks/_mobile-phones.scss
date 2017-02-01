@@ -1,56 +1,84 @@
 .mobile-phones{
 	display: none;
 	@include m980{
+		background-color: #377c91;
+		height: 38px;
 		display: block;
 		position: fixed;
 		z-index: 1000;
-		bottom: 0;
+		bottom: 35px;
 		left: 0;
 		width: 100%;
 		@include clearfix;
+		min-width: 320px;
 	}
 	@include m768{
-		bottom: 56px;
+		
 	}
 	&_left{
-		background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
 		float: left;
+		width: 50%;
+		padding: 12px 0;
+		text-align: center;
+		box-sizing: border-box;
 		@include link(#fff, #fff);
 		text-decoration: none;
-		padding: 14px 10px 14px 40px;
-		cursor: pointer;
+		cursor: pointer;	
+		font-size: 14px;
+		line-height: 13px;
+		font-weight: bold;
 		position: relative;
-		font-size: 15px;
 		&:before{
 			content: '';
 			position: absolute;
-			left: 6px;
-			top: 8px;
-			width: 28px;
-			height: 28px;
-			background: url('images/phone.png') no-repeat;
-			background-size: contain;
+			right: 0;
+			top: 6px;
+			width: 1px;
+			height: 26px;
+			background-color: #fff;
 		}
 	}
 	&_right{
-		background: #bc262c url("images/header_menu_bg.gif") repeat-x scroll 0 0;
-		background-color: #BC262C;
 		float: right;
+		width: 50%;
+		padding: 12px 0;
+		text-align: center;
+		box-sizing: border-box;
 		@include link(#fff, #fff);
 		text-decoration: none;
-		padding: 14px 10px 14px 40px;
 		cursor: pointer;
+		font-size: 14px;
+		line-height: 13px;
+		font-weight: bold;
+	}
+	&_text{
+		display: inline-block;
 		position: relative;
-		font-size: 15px;
-		&:before{
-			content: '';
-			position: absolute;
-			left: 6px;
-			top: 8px;
-			width: 28px;
-			height: 28px;
-			background: url('images/phone.png') no-repeat;
-			background-size: contain;
+		border-bottom: 1px solid #699dad;
+		margin: 0 0 0 19px;
+		.mobile-phones_left &{
+			&:before{
+				content: '';
+				position: absolute;
+				left: -19px;
+				top: -3px;
+				width: 15px;
+				height: 20px;
+				background: url('images/phone2.png') no-repeat;
+				background-size: contain;
+			}
+		}
+		.mobile-phones_right &{
+			&:before{
+				content: '';
+				position: absolute;
+				left: -19px;
+				top: -3px;
+				width: 15px;
+				height: 20px;
+				background: url('images/phone2.png') no-repeat;
+				background-size: contain;
+			}
 		}
 	}
 }
