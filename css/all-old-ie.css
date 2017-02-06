@@ -1923,11 +1923,10 @@ pre {
       color: #fff;
       font-size: 16px;
       line-height: 41px;
-      font-weight: bold;
       font-family: heliosbold;
       display: block;
       padding: 0 27px;
-      font-weight: bold; }
+      font-weight: 400; }
       .top-menu3_item a:visited {
         color: #fff; }
       .top-menu3_item a:hover {
@@ -2256,14 +2255,14 @@ pre {
 
 .deftop2-menu #horizontal-multilevel-menu li a.root-item {
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: 400; }
   @media all and (max-width: 979px) {
     .deftop2-menu #horizontal-multilevel-menu li a.root-item {
       font-weight: normal; } }
 
 .deftop2-menu #horizontal-multilevel-menu li a.root-item-selected {
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: 400; }
 
 .deftop2-menu #horizontal-multilevel-menu, .deftop2-menu #horizontal-multilevel-menu ul {
   -webkit-border-radius: 3px;

@@ -206,14 +206,14 @@
 
   #horizontal-multilevel-menu li a.root-item{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
     @include m980{
       font-weight: normal;
     }
   }
   #horizontal-multilevel-menu li a.root-item-selected{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
   }
   #horizontal-multilevel-menu, #horizontal-multilevel-menu ul{
     border-radius: 3px;
