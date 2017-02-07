@@ -16,6 +16,20 @@ pre{
 
 .one-click-modal{
 	width: 500px;
+	@include m500{
+		width: 320px;
+		margin: -190px 0 0 -160px;
+	}
+}
+.one-click-modal-title{
+	@include m500{
+		font-size: 25px!important;
+	}
+}
+.one-click-modal input[type = text]{
+	@include m500{
+		width: 200px;
+	}
 }
 .basket{
 	width: 260px;

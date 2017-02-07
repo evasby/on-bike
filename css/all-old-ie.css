@@ -104,6 +104,18 @@ pre {
 
 .one-click-modal {
   width: 500px; }
+  @media all and (max-width: 500px) {
+    .one-click-modal {
+      width: 320px;
+      margin: -190px 0 0 -160px; } }
+
+@media all and (max-width: 500px) {
+  .one-click-modal-title {
+    font-size: 25px !important; } }
+
+@media all and (max-width: 500px) {
+  .one-click-modal input[type=text] {
+    width: 200px; } }
 
 .basket {
   width: 260px; }
