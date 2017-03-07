@@ -1,0 +1,9 @@
+.sitemap-link{
+	font-family: 'Courier New';
+	display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none!important;
+  @include link(#fff, #ccc);
+}

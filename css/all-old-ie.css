@@ -85,7 +85,6 @@
   height: 15px;
   margin: 0 10px 0 0;
   background-color: #fff;
-  -webkit-border-radius: 50%;
   border-radius: 50%; }
   .fs-pager-wrapper a:hover {
     background-color: #FEDD00; }
@@ -681,7 +680,6 @@ pre {
   font-weight: bold; }
 
 .deftop-menu #horizontal-multilevel-menu, .deftop-menu #horizontal-multilevel-menu ul {
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .deftop-menu_toggle {
@@ -744,7 +742,6 @@ pre {
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-border-radius: 2px;
   border-radius: 2px; }
 
 .brands-vertical li {
@@ -858,7 +855,6 @@ pre {
   color: #fff;
   background-color: #FB823F;
   padding: 0 5px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   font-size: 10px;
   font-weight: bold;
@@ -910,7 +906,6 @@ pre {
     animation: 0.5s ease 0s normal none 1 running borderview;
     background: #fff none repeat scroll 0 0;
     border: 2px solid #fdc431;
-    -webkit-border-radius: 4px;
     border-radius: 4px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
@@ -927,7 +922,6 @@ pre {
     animation: 0.5s ease 0s normal none 1 running borderview;
     background: #fff none repeat scroll 0 0;
     border: 2px solid #fdc431;
-    -webkit-border-radius: 4px;
     border-radius: 4px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
@@ -1812,7 +1806,6 @@ pre {
       float: left; }
     .newheader_menu1 .bx_search_container {
       overflow: hidden;
-      -webkit-border-radius: 12px;
       border-radius: 12px;
       margin: 7px 19px 0 0 !important;
       float: right;
@@ -1833,9 +1826,7 @@ pre {
         background-color: #fedd00;
         width: 78px;
         height: 27px;
-        -webkit-border-top-right-radius: 12px;
         border-top-right-radius: 12px;
-        -webkit-border-bottom-right-radius: 12px;
         border-bottom-right-radius: 12px;
         text-indent: 0;
         color: #000101;
@@ -2277,7 +2268,6 @@ pre {
   font-weight: 400; }
 
 .deftop2-menu #horizontal-multilevel-menu, .deftop2-menu #horizontal-multilevel-menu ul {
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .deftop2-menu_toggle {
@@ -2306,7 +2296,6 @@ pre {
   right: 15px;
   top: 21px;
   background-color: #fff;
-  -webkit-border-radius: 2px;
   border-radius: 2px; }
   .deftop2-menu_toggle__on .deftop2-menu_switch {
     background-color: transparent; }
@@ -2342,7 +2331,6 @@ pre {
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-border-radius: 2px;
   border-radius: 2px; }
 
 .content-columns {
@@ -2616,6 +2604,23 @@ pre {
 @media all and (max-width: 979px) {
   .footer-push {
     height: 0 !important; } }
+
+.sitemap-link {
+  font-family: 'Courier New';
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none !important;
+  color: #fff; }
+  .sitemap-link:visited {
+    color: #fff; }
+  .sitemap-link:hover {
+    color: #ccc; }
+  .sitemap-link:active {
+    color: #fff; }
+  .sitemap-link:focus {
+    color: #fff; }
 
 #ocb-form-click .ocb-form-field {
   position: relative; }

@@ -5,11 +5,11 @@ var gulp = require('gulp'),
     //minifyCss = require('gulp-minify-css'),
     sass= require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    sftp = require('gulp-sftp'),
+    //sftp = require('gulp-sftp'),
     plumberNotifier = require('gulp-plumber-notifier'),
     plumber = require('gulp-plumber'),
-    wait = require('gulp-wait'),
-    ftp = require( 'vinyl-ftp' );
+    wait = require('gulp-wait');
+    //ftp = require( 'vinyl-ftp' );
 
 
 
@@ -21,12 +21,12 @@ function errorAlert(error){
 };
 
 //ftp
-var conn = ftp.create( {
+/*var conn = ftp.create( {
   host:     '185.47.153.28',
   user:     'wfsadmin',
   password: '',
   parallel: 10
-} );
+} );*/
 // css
 gulp.task('css', function () {
   return gulp.src('./sass/all*.scss')
@@ -47,14 +47,14 @@ gulp.task('css', function () {
 });
 
 // SFTP
-gulp.task('sftp', function () {
+/*gulp.task('sftp', function () {
   return gulp.src('css/all.css')
     .pipe(sftp({
       host: 'wfs.by',
       auth: 'key',
       remotePath: '/home/evasby/www/on-bike/bitrix/templates/onbike/css'
     }));
-});
+});*/
 gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
   //gulp.watch('css/all.css', ['sftp']);
